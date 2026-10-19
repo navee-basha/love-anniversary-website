@@ -1,0 +1,6 @@
+{
+  "name": "Mr. & Mrs. - 6 Month Anniversary",
+  "description": "A luxury digital celebration and romantic love letter for a couple's 6-month wedding anniversary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

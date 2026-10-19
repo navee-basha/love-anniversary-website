@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200"><style>
+@keyframes tw{0%,100%{opacity:.2}50%{opacity:1}}
+.tw{animation:tw 3s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-2.4deg)}50%{transform:rotate(2.4deg)}}
+.sway{animation:sway 5.5s ease-in-out infinite}
+@keyframes flick{0%,100%{opacity:.7}35%{opacity:1}55%{opacity:.82}75%{opacity:.95}}
+.flick{animation:flick 2.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.06);opacity:1}}
+.pulse{animation:pulse 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(9px,14px) rotate(16deg)}}
+.drift{animation:drift 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{animation:spin 180s linear infinite;transform-origin:600px 600px}
+.spin-rev{animation:spin 240s linear infinite reverse;transform-origin:600px 600px}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.bob{animation:bob 6s ease-in-out infinite}
+@keyframes shim{0%,100%{opacity:.2;transform:translateX(-16px)}50%{opacity:.75;transform:translateX(16px)}}
+.shim{animation:shim 5s ease-in-out infinite}
+@keyframes cloud{0%,100%{transform:translateX(-40px)}50%{transform:translateX(40px)}}
+.cloud{animation:cloud 26s ease-in-out infinite}
+@keyframes rise{0%{transform:translateY(10px);opacity:0}30%{opacity:.75}100%{transform:translateY(-130px);opacity:0}}
+.rise{animation:rise 4.5s ease-out infinite}
+@keyframes fly{0%{transform:translate(-260px,30px)}100%{transform:translate(1460px,-60px)}}
+.fly{animation:fly 26s linear infinite}
+@keyframes flap{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.45)}}
+.flap{animation:flap .9s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes flame{0%,100%{transform:scale(1,1) rotate(-2deg)}50%{transform:scale(.88,1.14) rotate(2deg)}}
+.flame{animation:flame 1s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes walk{0%,100%{transform:translateX(0)}50%{transform:translateX(140px)}}
+.walk{animation:walk 44s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.04)}24%{transform:scale(1)}36%{transform:scale(1.06)}60%{transform:scale(1)}}
+.beat{animation:beat 2.6s ease-in-out infinite;transform-origin:600px 600px}
+@keyframes glint{0%,70%,100%{opacity:0}80%{opacity:.9}}
+.glint{animation:glint 5s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8EC5D9"/><stop offset="1" stop-color="#F6E3C1"/></linearGradient>
+  <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9C99B"/><stop offset="1" stop-color="#D4A874"/></linearGradient>
+  <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3E8C93"/><stop offset="1" stop-color="#1F5560"/></linearGradient>
+  <pattern id="tp" width="46" height="46" patternUnits="userSpaceOnUse">
+    <rect width="46" height="46" fill="#2D6A6E"/>
+    <g fill="none" stroke="#F6E3C1" stroke-width="1.6">
+      <polygon points="30.4,5.2 30.8,15.2 40.8,15.6 34,23 40.8,30.4 30.8,30.8 30.4,40.8 23,34 15.6,40.8 15.2,30.8 5.2,30.4 12,23 5.2,15.6 15.2,15.2 15.6,5.2 23,12"/>
+      <rect x="13.8" y="13.8" width="18.4" height="18.4" transform="rotate(45 23 23)"/>
+      <line x1="0" y1="0" x2="9.2" y2="9.2"/><line x1="46" y1="0" x2="36.8" y2="9.2"/>
+      <line x1="0" y1="46" x2="9.2" y2="36.8"/><line x1="46" y1="46" x2="36.8" y2="36.8"/>
+    </g>
+    <circle cx="23" cy="23" r="2.3" fill="#F6E3C1"/>
+  </pattern>
+  <mask id="arches"><rect width="1200" height="1200" fill="white"/>
+    <path d="M110,660 V360 A180,180 0 0 1 200,204.1 A180,180 0 0 1 290,360 V660 Z" fill="black"/><path d="M310,660 V360 A180,180 0 0 1 400,204.1 A180,180 0 0 1 490,360 V660 Z" fill="black"/><path d="M510,660 V360 A180,180 0 0 1 600,204.1 A180,180 0 0 1 690,360 V660 Z" fill="black"/><path d="M710,660 V360 A180,180 0 0 1 800,204.1 A180,180 0 0 1 890,360 V660 Z" fill="black"/><path d="M910,660 V360 A180,180 0 0 1 1000,204.1 A180,180 0 0 1 1090,360 V660 Z" fill="black"/></mask></defs><rect width="1200" height="1200" fill="url(#sky)"/>
+  <g class="cloud" style="animation-delay:-4.3s;animation-duration:22s" opacity="0.7" fill="#FFFFFF">
+      <circle cx="260" cy="260" r="40"/><circle cx="305" cy="250" r="52"/>
+      <circle cx="355" cy="265" r="36"/><rect x="260" y="260" width="95" height="40"/></g><g class="cloud" style="animation-delay:-5.8s;animation-duration:33.5s" opacity="0.7" fill="#FFFFFF">
+      <circle cx="800" cy="230" r="32"/><circle cx="836" cy="222" r="41.6"/>
+      <circle cx="876" cy="234" r="28.8"/><rect x="800" y="230" width="76" height="32"/></g><g class="cloud" style="animation-delay:-5.1s;animation-duration:35s" opacity="0.7" fill="#FFFFFF">
+      <circle cx="520" cy="300" r="24"/><circle cx="547" cy="294" r="31.2"/>
+      <circle cx="577" cy="303" r="21.6"/><rect x="520" y="300" width="57" height="24"/></g>
+  <g class="fly" style="animation-delay:-1.2s;animation-duration:29.4s"><g transform="translate(0 230) scale(0.6)">
+      <path class="flap" style="animation-delay:-0.3s" d="M-20,0 Q-10,-12 0,0 Q10,-12 20,0" fill="none" stroke="#5E6E7A" stroke-width="3.5" stroke-linecap="round"/></g></g><g class="fly" style="animation-delay:-11.2s;animation-duration:26.1s"><g transform="translate(0 305.2) scale(0.9)">
+      <path class="flap" style="animation-delay:-0.5s" d="M-20,0 Q-10,-12 0,0 Q10,-12 20,0" fill="none" stroke="#5E6E7A" stroke-width="3.5" stroke-linecap="round"/></g></g><g class="fly" style="animation-delay:-16.8s;animation-duration:23.9s"><g transform="translate(0 236.8) scale(0.7)">
+      <path class="flap" style="animation-delay:-0.4s" d="M-20,0 Q-10,-12 0,0 Q10,-12 20,0" fill="none" stroke="#5E6E7A" stroke-width="3.5" stroke-linecap="round"/></g></g><g class="fly" style="animation-delay:-1.6s;animation-duration:20.9s"><g transform="translate(0 253.8) scale(0.9)">
+      <path class="flap" style="animation-delay:-0.5s" d="M-20,0 Q-10,-12 0,0 Q10,-12 20,0" fill="none" stroke="#5E6E7A" stroke-width="3.5" stroke-linecap="round"/></g></g>
+  <path d="M780,660 C770,520 800,420 815,360 C830,420 860,520 850,660 Z" fill="#2F5D3A"/>
+  <path d="M350,660 C340,540 370,440 385,380 C400,440 430,540 420,660 Z" fill="#2F5D3A"/>
+  <rect y="120" width="1200" height="560" fill="url(#wall)" mask="url(#arches)"/>
+  <rect y="120" width="1200" height="60" fill="url(#tp)"/>
+  <rect y="176" width="1200" height="6" fill="#9C6B3A"/>
+  <path d="M110,660 V360 A180,180 0 0 1 200,204.1 A180,180 0 0 1 290,360 V660 Z" fill="none" stroke="#9C6B3A" stroke-width="6"/>
+    <path d="M96,660 V360 A208,208 0 0 1 200,179.9 A208,208 0 0 1 304,360 V660 Z" fill="none" stroke="#C99A64" stroke-width="3" stroke-dasharray="4 7"/><path d="M310,660 V360 A180,180 0 0 1 400,204.1 A180,180 0 0 1 490,360 V660 Z" fill="none" stroke="#9C6B3A" stroke-width="6"/>
+    <path d="M296,660 V360 A208,208 0 0 1 400,179.9 A208,208 0 0 1 504,360 V660 Z" fill="none" stroke="#C99A64" stroke-width="3" stroke-dasharray="4 7"/><path d="M510,660 V360 A180,180 0 0 1 600,204.1 A180,180 0 0 1 690,360 V660 Z" fill="none" stroke="#9C6B3A" stroke-width="6"/>
+    <path d="M496,660 V360 A208,208 0 0 1 600,179.9 A208,208 0 0 1 704,360 V660 Z" fill="none" stroke="#C99A64" stroke-width="3" stroke-dasharray="4 7"/><path d="M710,660 V360 A180,180 0 0 1 800,204.1 A180,180 0 0 1 890,360 V660 Z" fill="none" stroke="#9C6B3A" stroke-width="6"/>
+    <path d="M696,660 V360 A208,208 0 0 1 800,179.9 A208,208 0 0 1 904,360 V660 Z" fill="none" stroke="#C99A64" stroke-width="3" stroke-dasharray="4 7"/><path d="M910,660 V360 A180,180 0 0 1 1000,204.1 A180,180 0 0 1 1090,360 V660 Z" fill="none" stroke="#9C6B3A" stroke-width="6"/>
+    <path d="M896,660 V360 A208,208 0 0 1 1000,179.9 A208,208 0 0 1 1104,360 V660 Z" fill="none" stroke="#C99A64" stroke-width="3" stroke-dasharray="4 7"/>
+  <rect x="90" y="330" width="40" height="350" fill="#E9D3AE"/><rect x="84" y="326" width="52" height="16" fill="#C99A64"/><rect x="290" y="330" width="40" height="350" fill="#E9D3AE"/><rect x="284" y="326" width="52" height="16" fill="#C99A64"/><rect x="490" y="330" width="40" height="350" fill="#E9D3AE"/><rect x="484" y="326" width="52" height="16" fill="#C99A64"/><rect x="690" y="330" width="40" height="350" fill="#E9D3AE"/><rect x="684" y="326" width="52" height="16" fill="#C99A64"/><rect x="890" y="330" width="40" height="350" fill="#E9D3AE"/><rect x="884" y="326" width="52" height="16" fill="#C99A64"/><rect x="1090" y="330" width="40" height="350" fill="#E9D3AE"/><rect x="1084" y="326" width="52" height="16" fill="#C99A64"/>
+  <rect y="680" width="1200" height="40" fill="#CDA678"/>
+  <rect y="720" width="1200" height="480" fill="#E9D3AE"/>
+  <path d="M440,720 L760,720 L900,1200 L300,1200 Z" fill="url(#pool)"/>
+  <path d="M440,720 L760,720 L900,1200 L300,1200 Z" fill="none" stroke="#B88A55" stroke-width="10"/>
+  <g stroke="#BFE3E6" stroke-linecap="round"><line class="shim" x1="520" y1="800" x2="680" y2="800" stroke-width="3"/><line class="shim" style="animation-delay:-2s" x1="480" y1="900" x2="720" y2="900" stroke-width="3"/><line class="shim" style="animation-delay:-3.5s" x1="450" y1="1020" x2="750" y2="1020" stroke-width="3"/></g>
+  <ellipse cx="600" cy="760" rx="60" ry="14" fill="#B88A55"/>
+  <g class="flick"><path d="M600,758 C580,700 560,690 545,720 M600,758 C620,700 640,690 655,720 M600,758 L600,690" fill="none" stroke="#DFF3F5" stroke-width="5" stroke-linecap="round" opacity="0.85"/></g>
+  <path d="M60,1200 Q140,1000 200,1200 Z" fill="#3E7046" opacity="0.8"/><path d="M1140,1200 Q1060,1000 1000,1200 Z" fill="#3E7046" opacity="0.8"/><path d="M100,1200 Q130,1030 220,1200 Z" fill="#3E7046" opacity="0.8"/><path d="M1100,1200 Q1070,1030 980,1200 Z" fill="#3E7046" opacity="0.8"/><path d="M140,1200 Q120,1060 240,1200 Z" fill="#3E7046" opacity="0.8"/><path d="M1060,1200 Q1080,1060 960,1200 Z" fill="#3E7046" opacity="0.8"/><path d="M180,1200 Q110,1090 260,1200 Z" fill="#3E7046" opacity="0.8"/><path d="M1020,1200 Q1090,1090 940,1200 Z" fill="#3E7046" opacity="0.8"/></svg>
